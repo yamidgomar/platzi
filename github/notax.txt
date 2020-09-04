@@ -1,1 +1,17 @@
-# Notas sobre github
+* Notas sobre github
+
+_______________________________
+
+
+* Subir archivo a repositorio creado vacio:
+
+1. git init
+2. git add .
+3. git commit -m "Mensaje de ejemplo"
+4. git branch -M master
+5. git remote add origin git@github.com:yamidgomar/ejemplo.git
+6. git push -u origin master
+
+
+
+
