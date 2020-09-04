@@ -4,6 +4,7 @@ _______________________________
 
 
 * Subir archivo a repositorio creado vacio:
+_______________________________
 
 1. git init
 2. git add .
