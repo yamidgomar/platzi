@@ -1,0 +1,13 @@
+git branch -b Lista las ramas del repositorio.
+
+git checkout -b <nombre_rama> Crea una nueva rama y te cambia a ella.
+
+git branch <nombre_rama> Crea una nueva rama y te mantiene en ella (gracias Julian Alejandro Sosa).
+
+git checkout <nombre_rama> Te cambia de rama.
+
+git rebase <nombre_rama> Hace un rebase (se conservan todos los commit de la rama diferida sobre la rama master. Gracias Alejandro Gonzáles Reyes).
+
+git merge <nombre_rama> Hace un merge (merge es fusionar todos los commit de una rama sobre otra en un solo punto, merge no elimina en automático la rama, esta hay que eliminarla manualmente. Gracias Alejandro Gonzáles Reyes).
+
+git add . Añade todos los cambios de la carpeta actual al siguiente commit
