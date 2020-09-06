@@ -10,9 +10,9 @@ platzi.
 1. primer articulo
 2. articulo
 
-· item( el punto se hace con alt + 250 )
-· item dos.
-· item tres 
+* item uno.
+* item dos.
+* item tres 
 
     var variable = "hola mundo"
     console.log(variable)
