@@ -22,5 +22,8 @@ git log unestra ultimos commits en la historia
 
  git se da cuenta cuando hay algun cambio en el repo.
 
+ Dentro de Git es posible regresar entre commits con el comando git reset, tenemos dos opciones para regresar:
 
+ --soft: vamos a movernos al commit que le indiquemos, sin eliminar los commits de por medio.
+ --hard: nos movemos al commit que indiquemos y regresamos el repositorio al estado del commit, borrando todos los commits de por medio
 
