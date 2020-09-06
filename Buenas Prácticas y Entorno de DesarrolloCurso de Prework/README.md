@@ -6,3 +6,7 @@ platzi.
 > Este es el primer parrafo.
 >
 > Este es el segundo parrafo
+
+1. primer articulo
+2. articulo
+
