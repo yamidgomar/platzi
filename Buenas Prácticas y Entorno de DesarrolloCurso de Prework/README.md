@@ -14,3 +14,6 @@ platzi.
 · item dos.
 · item tres 
 
+    var variable = "hola mundo"
+    console.log(variable)
+
