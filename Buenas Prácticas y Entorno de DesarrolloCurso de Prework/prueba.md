@@ -39,10 +39,10 @@ _*lista ordenada*_
 
 **lista desordenada**
 
-· item numero uno.
-· item numero dos.
-· item numero tres.
-· item numero cuatro.
+* item numero uno.
+* item numero dos.
+* item numero tres.
+* item numero cuatro.
 
 >_*Este es el titulo de la cita.Una cita como tal:*_
 >> Cita dentro de cita.
