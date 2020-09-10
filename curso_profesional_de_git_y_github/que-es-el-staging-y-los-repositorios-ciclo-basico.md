@@ -11,7 +11,7 @@ antes de enviar los cambios al repositorio y se crea el repositorio(./git).
 * ontracked aun no se a dado add, esta sin rastrear.
 * Tracked has dado add, es decir lo estamos rastreando.Aqui ya hace parte de staging.
 * Despues de aplicar _git commit -m mensaje_ , pasa de estar trackeado en stagging a trackeado en el repositorio.
-* Cuando el archivo llega al *repositorio* se les agrega un numero largo que son los codigos del commit,
+* Cuando el archivo llega al _repositorio_ se les agrega un numero largo que son los codigos del commit,
   Ejm: e79d59f295b6ee1f7454f940fdbca7b7a2de57f3.
 
 * Cuando quieres traerte un cambio en el repositorio a mi carpeta, vamos a una rama y colcamos git checkout y traemos un cambio de la carpeta o archivo.
