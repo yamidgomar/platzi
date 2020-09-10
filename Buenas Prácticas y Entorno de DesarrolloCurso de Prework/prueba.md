@@ -37,7 +37,7 @@ _*lista ordenada*_
 3. item numero tres.
 4. item numero cuatro.
 
-_*lista desordenada*_
+__lista desordenada__
 
 · item numero uno.
 · item numero dos.
