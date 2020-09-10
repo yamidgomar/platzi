@@ -44,6 +44,6 @@ _*lista ordenada*_
 · item numero tres.
 · item numero cuatro.
 
->Este es el titulo de la cita.Una cita como tal:
+>_*Este es el titulo de la cita.Una cita como tal:*_
 >> Cita dentro de cita.
 >Sit esse quae asperiores sunt dolor dignissimos. Ipsum vitae ab?
