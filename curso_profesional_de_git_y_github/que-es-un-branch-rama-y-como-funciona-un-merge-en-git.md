@@ -19,18 +19,18 @@ Una rama representa una línea independiente de desarrollo, es como crear un nue
 
 ## Listar, crear y manejar ramas, git branch
 
-git branch
-Este comando lista las ramas locales que existen. La rama en la que estás trabajando actualmente se señala con un asterisco *. La rama master es la rama con la que se comienza en cualquier proyecto, y es la que se utiliza como rama principal donde se encuentra el proyecto en su estado final.
+* git branch
+Este comando lista las ramas locales que existen. La rama en la que estás trabajando actualmente se señala con un asterisco. La rama master es la rama con la que se comienza en cualquier proyecto, y es la que se utiliza como rama principal donde se encuentra el proyecto en su estado final.
 
-git branch [rama]
+* git branch [rama]
 Este comando crea una rama con el nombre que elijas.
 
-git checkout experimento
+* git checkout experimento
 Si hemos nombrado a la rama “experimento”, este comando nos sitúa en esa rama.
 
 Si estábamos en la rama master, teníamos archivos modificados sin añadir o añadidos en el área de ensayo, y nos situamos en la rama experimento con git checkout, éstos cambios se verán en la rama experimento. Hasta que no se haga un commit, los cambios no pertenecerán a ninguna rama.
 
-git branch -v
+* git branch -v
 Este comando muestra el último commit en cada rama.
 
 * git checkout -b [rama]
