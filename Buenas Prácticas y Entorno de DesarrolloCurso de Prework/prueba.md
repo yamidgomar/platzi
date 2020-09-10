@@ -8,25 +8,25 @@ Dolor quia ex error rem delectus. Aperiam vel quis laboriosam laborum nostrum Qu
 
 ### Lo que sigue es codigo html:
 
-    <!DOCTYPE html>
-    <html lang="es">
-    <head>
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <meta charset="UTF-8">
-        <title></title>
-        <link rel='stylesheet' href=''>
-        <style type="text/css">
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing:border-box;
-            }
-        </style>
-    </head>
-    <body>
-        
-    </body>
-    </html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel='stylesheet' href=''>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing:border-box;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
 
 ## Veamos las listas:
 
@@ -37,9 +37,13 @@ _*lista ordenada*_
 3. item numero tres.
 4. item numero cuatro.
 
-__lista desordenada__
+**lista desordenada**
 
 · item numero uno.
 · item numero dos.
 · item numero tres.
 · item numero cuatro.
+
+>Este es el titulo de la cita.Una cita como tal:
+>> Cita dentro de cita.
+>Sit esse quae asperiores sunt dolor dignissimos. Ipsum vitae ab?
