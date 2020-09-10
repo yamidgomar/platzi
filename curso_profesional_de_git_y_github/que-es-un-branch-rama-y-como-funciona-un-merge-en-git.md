@@ -17,7 +17,8 @@ Solo ten en cuenta que combinar estas ramas (sí, hacer “merge”) puede gener
 
 Una rama representa una línea independiente de desarrollo, es como crear un nuevo área de trabajo con su área de ensayo y su historial. Los nuevos commits se registrarán de forma independiente en el historial la rama, lo que se conoce como forks en el historial del proyecto (término muy empleado en github).
 
-Listar, crear y manejar ramas, git branch
+## Listar, crear y manejar ramas, git branch
+
 git branch
 Este comando lista las ramas locales que existen. La rama en la que estás trabajando actualmente se señala con un asterisco *. La rama master es la rama con la que se comienza en cualquier proyecto, y es la que se utiliza como rama principal donde se encuentra el proyecto en su estado final.
 
