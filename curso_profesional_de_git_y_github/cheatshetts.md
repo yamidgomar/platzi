@@ -1,4 +1,4 @@
-# Comandos basicos:
+## Comandos basicos:
 
 * **git init:** iniciamos el repositorio, creamos el repositorio (./git).
 
