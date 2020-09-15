@@ -14,7 +14,22 @@ Hay dos formas de usar git reset: con el argumento --hard, borrando toda la info
 
 * **git diff #commit1 #commit2 :** Nos muestra la diferencia entre las dos versiones de los commits.
 
-* **git log --stat:** Muestra los cambios especificos en cuales archivos apartir del commit.
+* **git log --stat:** Muestra los cambios especificos en cuales archivos apartir del commit. Ejm:
+    commit 78ccefd95aaf0ccede94b7f245612644eb1528a3
+    Author: Yamid Gonzalez <yamidgm@gmail.com>
+    Date:   Mon Sep 14 22:32:20 2020 -0500    
+
+        agregado el script 
+    index.html | 1 + 
+    1 file changed, 1 insertion(+)
+
+    commit 9b911f6366bbb248c68084485bd850bd96fe0e43
+    Author: Yamid Gonzalez <yamidgm@gmail.com>
+    Date:   Mon Sep 14 22:19:39 2020 -0500    
+
+        mas cambios 
+    script.js | 3 +++
+    1 file changed, 3 insertions(+)
 
 
 
