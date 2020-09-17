@@ -31,5 +31,6 @@ Hay dos formas de usar git reset: con el argumento --hard, borrando toda la info
     script.js | 3 +++
     1 file changed, 3 insertions(+)
 
-
+    commit:780000000000000000000000000000000
+    Author: Yamid GONZALEZ
 
