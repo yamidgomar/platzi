@@ -6,7 +6,7 @@ También hay una forma de hacerlo un poco más “ruda”: usando el comando git
 
 Hay dos formas de usar git reset: con el argumento --hard, borrando toda la información que tengamos en el área de staging (y perdiendo todo para siempre). O, un poco más seguro, con el argumento --soft, que mantiene allí los archivos del área de staging para que podamos aplicar nuestros últimos cambios pero desde un commit anterior.
 
-
+* **git checkout #commit:** 
 * **git status:**
 
 * **git mv:** recomendable para renombrar archivos o cambiarles la ubicacion. 
@@ -15,9 +15,9 @@ Hay dos formas de usar git reset: con el argumento --hard, borrando toda la info
 * **git diff #commit1 #commit2 :** Nos muestra la diferencia entre las dos versiones de los commits.
 
 * **git log --stat:** Muestra los cambios especificos en cuales archivos apartir del commit. Ejm:
-    commit 78ccefd95aaf0ccede94b7f245612644eb1528a3
-    Author: Yamid Gonzalez <yamidgm@gmail.com>
-    Date:   Mon Sep 14 22:32:20 2020 -0500    
+        commit 78ccefd95aaf0ccede94b7f245612644eb1528a3
+        Author: Yamid Gonzalez <yamidgm@gmail.com>
+        Date:   Mon Sep 14 22:32:20 2020 -0500    
 
         agregado el script 
     index.html | 1 + 
@@ -31,5 +31,6 @@ Hay dos formas de usar git reset: con el argumento --hard, borrando toda la info
     script.js | 3 +++
     1 file changed, 3 insertions(+)
 
-
+    commit:780000000000000000000000000000000
+    Author: Yamid GONZALEZ
 
