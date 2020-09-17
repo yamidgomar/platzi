@@ -40,7 +40,6 @@
 
 * **git merge [rama]:** Unir una rama a la rama actual.
 
-* **git status:**
 
 * **git mv:** recomendable para renombrar archivos o cambiarles la ubicacion. 
 
