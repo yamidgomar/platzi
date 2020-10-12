@@ -20,6 +20,7 @@
 
 **ssh-add rutaid_rsa :**:Informacion al sistema de la ubicacion del archivo que contiene la llave privada.
 
-> **_Nota:_** Nunca pasar la llave privada solo la publica.
+> **_Nota:_** 
+> Nunca pasar la llave privada solo la publica.
 
 
