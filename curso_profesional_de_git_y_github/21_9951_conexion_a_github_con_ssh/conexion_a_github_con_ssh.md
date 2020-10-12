@@ -23,4 +23,6 @@
 > **_Nota:_** 
 > Nunca pasar la llave privada solo la publica.
 
+Posteriormente hay que proporcionar a github una llave de nuestra copia llave publica, en la ruta: Personal Settings/SSH and GPG Keys/SSH Keys/ hay hay que copiar el contenido del archivo id_rsa-pub que se genero en el comando ssh-keygen.
+
 
