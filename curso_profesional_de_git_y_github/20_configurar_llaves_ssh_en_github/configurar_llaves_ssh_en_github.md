@@ -8,6 +8,6 @@ ssh-keygen -t rsa -b 4096 -C "tu@email.com"
 
 eval $(ssh-agent -s)
 
-## Añadir tu llave SSH a este "servidor":
+## 3º Añadir tu llave SSH a este "servidor":
 
 ssh-add ruta-donde-guardaste-tu-llave-privada
