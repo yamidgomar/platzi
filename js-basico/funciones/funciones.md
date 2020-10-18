@@ -12,7 +12,7 @@
         return a + b;
     }
 
->>Ejemplos:
->>  function listaEstudiantes(estudiante){
-    >>      console.log(`Hola ${estudiante}`)
->>  }
+>Ejemplos:
+>  function listaEstudiantes(estudiante){
+>      console.log(`Hola ${estudiante}`)
+>  }
