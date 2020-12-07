@@ -1,8 +1,8 @@
 # Variables: Strins.
 
-**str.toUpperCase():**Cambia el string a Mayuscula.
+**str.toUpperCase():** Cambia el string a Mayuscula.
 
-**str.toLowerCase():**Cambia el string a Minuscula.
+**str.toLowerCase():** Cambia el string a Minuscula.
 
 **str.chartAt():** Trae el caracter en la posicion que se requiere
 
