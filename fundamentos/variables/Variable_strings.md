@@ -14,8 +14,7 @@
 > str.length, entrega la cantidad de letras en el string.
 
 
-## Interpolacion de variables:
+## Interpolacion de variables: ${var1} ${var2}
 
-**${var1} ${var2}** 
 Dentro de las llaves se puede colocar codigo JS Ejm:
-${str.toUpperCase()} 
+    ${str.toUpperCase()} 
