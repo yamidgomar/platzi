@@ -13,6 +13,7 @@
 > **Nota:** El primer caracter en todo string se encuentra en la posicion 0,
 > str.length, entrega la cantidad de letras en el string.
 
+**str.substr(posicion, numero de caracteres a extraer):** Trae una subcadena, el primer parametro marca desde donde queremos empezar a extraer y el segundo es cuantos caracteres queremos que extraiga.
 
 ## Interpolacion de variables: ${var1} ${var2}
 
@@ -20,6 +21,4 @@ Dentro de las llaves se puede colocar codigo JS Ejm:
    
      ${str.toUpperCase()} 
 
-**str.substr(posicion, numero de caracteres a extraer):**
 
-Trae una subcadena, el primer parametro es de desde donde queremos empezar a extraer y el segundo es cuantos caracteres queremos que extraiga.
