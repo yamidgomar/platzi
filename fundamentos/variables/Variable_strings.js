@@ -1,4 +1,7 @@
 var precio = 200.3;
 
-var valortotal = Math.round(200.3 * 100 * 3/100)
-console.log(valortotal)
+var valortotal = 200.3 * 100 * 3/100
+console.log(Math.round(valortotal))
+
+var totaldos = valortotal.toFixed(2);
+console.log(totaldos)

@@ -19,7 +19,14 @@
 **Math.round():** Redondear una cantidad.
 
     var precio = 200.3;
-    var valortotal = Math.round(200.3 * 100 * 3/100)
-    console.log(valortotal)   // 601.
+    var valortotal = 200.3 * 100 * 3/100;    //600.9
+
+    console.log(Math.round(valortotal));   // 601.
+
+**.toFixed(n):** n es la cantidad de decimales a tomar.
+
+    var varlortotaldos = total.toFixed(2)
+    console.log(vartotaldos);   //600.90
 
 
+**Falta parseFloat / incluir**
