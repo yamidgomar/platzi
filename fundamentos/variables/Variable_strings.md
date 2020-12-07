@@ -1,4 +1,4 @@
-# Variables: Strins.
+# Variables: Strings.
 
 **str.toUpperCase():** Cambia el string a Mayuscula.
 
@@ -17,4 +17,9 @@
 ## Interpolacion de variables: ${var1} ${var2}
 
 Dentro de las llaves se puede colocar codigo JS Ejm:
-    ${str.toUpperCase()} 
+   
+     ${str.toUpperCase()} 
+
+**str.substr(posicion, numero de caracteres a extraer):**
+
+Trae una subcadena, el primer parametro es de desde donde queremos empezar a extraer y el segundo es cuantos caracteres queremos que extraiga.
