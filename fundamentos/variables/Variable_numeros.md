@@ -4,8 +4,8 @@
 
 **Sumar "+"**.
 
-**Restar "-".
+**Restar "-"**.
 
-**Multiplicar "*".
+**Multiplicar "*"**.
 
-**Dividir "/".
+**Dividir "/"**.
