@@ -9,3 +9,6 @@
     var str = `Este es el String a Modificar`
     console.log(`Traemos el desde el caracter 8: ${str.charAt(8)}.`)
     //Traemos el desde el caracter 8: e .
+
+> **Nota:** El primer caracter en todo string se encuentra en la posicion 0,
+> str.length, entrega la cantidad de letras en el string.
