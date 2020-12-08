@@ -37,4 +37,20 @@ esto lo vamos a querer evitar.
 
 Para acceder a la variable global, hacemos referencia al odjeto global, en este caso por estar en el browser accedemos con window.nombre.
 
+    var nombre = "cocosette";
+    function imprimeNombre(){    
+        nombre = nombre.toUpperCase();    
+        console.log(nombre); 
+    }
 
+    //imprimeNombre()
+
+El alcance de la siguiente funcion solo es para la variable local que llega por parametro.
+
+    function imprime(n){    
+        n = n.toUpperCase();    
+        console.log(n); 
+    }
+
+    imprime(nombre);
+    console.log(nombre)
