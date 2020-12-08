@@ -40,3 +40,4 @@ var chat = {
             aUsuario: "yagomar"
           }
 }
+
