@@ -41,27 +41,69 @@ var chat = {
           }
 }
 
-PAra acceder al mensaje:
+Para acceder al mensaje:
 
     console.log(chat.info.mensaje);
 
 * otras formas de agregarles atributos a los objetos:
 
-var yo = {};
-yo.nombre = "yamid";
-yo.apellido = "gonzalez";
-yo.sobrenombre = "mompirry";
-yo.edad = 34;
+    var yo = {};
+    yo.nombre = "yamid";
+    yo.apellido = "gonzalez";
+    yo.sobrenombre = "mompirry";
+    yo.edad = 34;
 
-yo["ocupacion"] = "estudiante";
+    yo["ocupacion"] = "estudiante";
 
-delete yo.sobrenombre  // Borramos sobrenombre.
+    delete yo.sobrenombre  // Borramos sobrenombre.
 
 
 # Destructor de objetos:
+
+Para no duplicar las variables introducimos el nombre de la variable como parametro de la segunda variable.
 
     var dario = {
         nombre:"Dario",
         apellido:"linzick",
         edad:30
     }
+
+    function imprimir(persona){
+        var {nombre} = persona;
+        console.log(nombre.toUpperCase())
+    }
+
+    imprimir(dario);
+
+## Destructurar objetos de objetos:
+
+    var obj1 = {
+        obj2:{
+            nombre:"victor",
+            edad:19
+        },
+        obj3: {
+            nombre:"yamid",
+            edad:34
+        }
+    }
+
+    function saludar(obj){
+        var {nombre,edad} = obj1.obj2;
+        console.log(`Hola ${nombre}, tienes ${edad} años.`)
+    }
+    
+    saludar(obj1)
+   
+
+    **Otra forma** 
+
+    function imprimir()
+
+* **Se puede hacer como una funcion flecha:**
+
+    var imprimir = obj =>{
+        var {nombre, edad} = obj1.obj2;
+        console.log(`Hola ${nombre}, tienes ${edad} años.`)
+    }
+
