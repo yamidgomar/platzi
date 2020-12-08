@@ -41,3 +41,27 @@ var chat = {
           }
 }
 
+PAra acceder al mensaje:
+
+    console.log(chat.info.mensaje);
+
+* otras formas de agregarles atributos a los objetos:
+
+var yo = {};
+yo.nombre = "yamid";
+yo.apellido = "gonzalez";
+yo.sobrenombre = "mompirry";
+yo.edad = 34;
+
+yo["ocupacion"] = "estudiante";
+
+delete yo.sobrenombre  // Borramos sobrenombre.
+
+
+# Destructor de objetos:
+
+    var dario = {
+        nombre:"Dario",
+        apellido:"linzick",
+        edad:30
+    }
