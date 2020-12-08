@@ -14,3 +14,16 @@
         mayuscula: "Este texto en parte en minuscula".toUpperCase() 
     }
     console.log(objeto.sumar)
+
+* Los objetos se pueden enviar por parametro a alguna funcion de esta manera:
+
+
+    function suma({n1, n2}){
+        var operacion = n1 + n2;
+        console.log(operacion);
+    }
+    
+    var misuma = {n1:25, n2:10 }
+    suma(misuma)   // 35
+    suma({n1:20, n2:10})    // 30
+    suma({n1: 10 + 20, n2:(20 -10)})    // 40
