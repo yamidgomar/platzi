@@ -27,3 +27,16 @@
     suma(misuma)   // 35
     suma({n1:20, n2:10})    // 30
     suma({n1: 10 + 20, n2:(20 -10)})    // 40
+
+## ADICIONAL:
+
+* Las propiedades en los objetos pueden recibir objetos:
+
+var chat = {
+    info: {
+            mensaje: "algun mensaje",
+            fechamensaje: "08/12/2020",
+            deUsuario: "Victor",
+            aUsuario: "yagomar"
+          }
+}
