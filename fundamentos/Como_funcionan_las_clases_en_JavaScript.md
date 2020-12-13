@@ -1,4 +1,5 @@
 Este es el prototipo.
+
     function persona(nombre, apellido, edad){
         //Para guardar los parametros del objeto que se esta contruyendo
         //podemos hacer referencia a ese objeto con la palabra this. 
