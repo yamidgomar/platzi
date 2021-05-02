@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 
 // https://exploringjs.com/impatient-js/ch_template-literals.html
 //
+=======
+// https://exploringjs.com/impatient-js/ch_template-literals.html
+>>>>>>> d34ebaea8f0394a42dd29bebde81f8343bdf01d4
 
 
 /*
