@@ -72,21 +72,28 @@ const PEOPLE_URL = 'people/:id/'
 function obtenerPersonaje(id, callback){
     //Si queremos garantizar ese orden debem
     const url = `${API_URL}${PEOPLE_URL.replace(':id', id)}` 
-    $.get(url, {crossDomain:true}, function(persona){
-        console.log(`Hola yo soy ${persona.name}`)
-        if(callback){
-            callback()
-        }
+    $.get(url, {crossDomain:true}, callback).fail(function(){
+            console.log(`!!!!!!!!!!!! ERROR No se pudo encontrar el personahe numero ${id}`)
     })
 }
 
-obtenerPersonaje(1, function(){
-    obtenerPersonaje(2, function(){
-        obtenerPersonaje(3, function(){
-            obtenerPersonaje(4, function(){
-                obtenerPersonaje(5)
+obtenerPersonaje(1, function(persona){
+        console.log(`Hola yo soy ${persona.name}`)
+
+        obtenerPersonaje(2, function(persona){
+            console.log(`Hola yo soy ${persona.name}`)
+
+            obtenerPersonaje(3, function(persona){
+                console.log(`Hola yo soy ${persona.name}`)
+
+                obtenerPersonaje(4, function(persona){
+                    console.log(`Hola yo soy ${persona.name}`)
+
+                    obtenerPersonaje(5, function(persona){
+                        console.log(`Hola yo soy ${persona.name}`)
+                    })
+                })
             })
         })
-    })
 })
 
