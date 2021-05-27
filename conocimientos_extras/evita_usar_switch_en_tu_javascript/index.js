@@ -1,7 +1,11 @@
 //https://youtu.be/0NlsJuwFsrQ
 //Lista de reproduccion html, css, javascript, nodejs.
 
+<<<<<<< HEAD
 const adversario = 'Espiderman';
+=======
+const adversario = 'Hulk';
+>>>>>>> 1c08fb1ee7806400ce408606ff0c22716d5b4225
 
 
 // ====== Con switch ====== \\
@@ -57,6 +61,7 @@ Tor: () => 'Odin'
 const LOKI_DEFAULT = 'Loki'
 const loki = LOKI_DISFRASES[adversario]?LOKI_DISFRASES[adversario]():LOKI_DEFAULT
 */
+<<<<<<< HEAD
 
 var loki = ''
 
@@ -73,5 +78,20 @@ switch(adversario){
     default:
         loki = 'Loki'
 }
+=======
+
+
+const LOKI_DISFRASES = {
+    'Iron-Man': () => 'Magneto',
+    Hulk: () => 'Thanos',
+    Thor:() => 'Odin'
+}
+
+const LOKI_DEFAULT = 'Loki'
+
+const loki = LOKI_DISFRASES[adversario]?LOKI_DISFRASES[adversario]():LOKI_DEFAULT
+>>>>>>> 1c08fb1ee7806400ce408606ff0c22716d5b4225
 
 console.log(loki)
+
+

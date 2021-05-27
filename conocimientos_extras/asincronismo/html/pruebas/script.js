@@ -1,25 +1,24 @@
-const API_URL = 'https://swapi.dev/api/'
-const PEOPLE_URL = 'people/:id/'
-const opcs =  {crossDomain:true}
+const API_URL = 'https://jsonplaceholder.typicode.com/'
+const USER_URL = 'users/:id'
 
-const obtenerPersonaje = function(id, callback){
-    const URL = `${API_URL}${PEOPLE_URL.replace(':id', id)}`
-    $.get(URL,opcs, function(data){
-        console.log(`Hola me llamo ${data.name}`)
-        if(callback){
-            callback()
-        }
+const opcs = {crossDomain:true}
+
+const obtenerPersonaje = (id, callback) => {
+    const URL = `${API_URL}${USER_URL.replace(':id', id)}`
+    $.get(URL, opcs, callback).fail(function(){
+        console.log(`EROOOOOOOOOOOOOOOOOOOOORrrrrrrrrrrrrrrrrrrr No de pudo obtener el personaje ${id}`)
     })
 }
 
-obtenerPersonaje(1,function(){
-    obtenerPersonaje(2, function(){
-        obtenerPersonaje(3, function(){
-            obtenerPersonaje(4, function(){
-                obtenerPersonaje(5, function(){
-                    obtenerPersonaje(6)
-                })
-            })
+obtenerPersonaje(1, function(personaje){
+    console.log(personaje.name)
+    
+    obtenerPersonaje(2, function(personaje){
+        console.log(personaje.name)
+
+        obtenerPersonaje(3, function(personaje){
+            console.log(personaje.name)
         })
+    })
 })
-})
+
