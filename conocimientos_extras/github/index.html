@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="">
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing:border-box;
+        }
+    </style>
+</head>   
+<body>
+    <script type="module">
+        //https://github.com/octokit/octokit.js
+
+        import { Octokit, App  } from "https://cdn.skypack.dev/octokit";
+    // Create a personal access token at https://github.com/settings/tokens/new?scopes=repo
+
+    //https://github.com/settings/tokens
+    const octokit = new Octokit({ auth: `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`  });
+
+
+    // Compare: https://docs.github.com/en/rest/reference/users#get-the-authenticated-user
+    const {
+      data: { login  },
+      
+    } = await octokit.rest.users.getAuthenticated();
+    console.log("Hello, %s", login);
+    </script>
+</body>
+</html>
