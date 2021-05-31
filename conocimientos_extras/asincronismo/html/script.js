@@ -181,7 +181,7 @@ Dentro de esta función se va a generar el llamado asíncrono. Devolvemos la gen
 
     function obtenerPersonaje(id) {
         return new Promise((resolve, reject) => {
-            consturl = `${API_URL}${PEOPLE_URL.replace(':id', id)}`
+            const url = `${API_URL}${PEOPLE_URL.replace(':id', id)}`
             $.
                 get(url, opts, function(data){
                     resolve(data)
@@ -243,7 +243,7 @@ function obtenerPersonaje(id) {
             })
 
             .fail(() => reject(id))
-            })
+    })
 }
 
 function onError(id){
@@ -255,3 +255,129 @@ obtenerPersonaje(1)
         console.log(personaje.name)
     })
     .catch(onError)
+
+
+// =================== Promesas encadenadas ==================== \\
+
+Encadenar promesas es mucho más limpio que con el método anterior. Primero escribimos la invocación de la promesa con un arrow function:
+
+    obtenerPersonaje(1)
+        .then( personaje => {
+            console.log(personaje.name)                
+        })
+        .catch(onError)
+
+
+Al resolver esta promesa vamos a retornar otra promesa invocando dentro del .then nuevamente la función obtenerPersona() con el id del siguiente personaje:
+
+    obtenerPersonaje(1)
+        .then( personaje => {
+            console.log(personaje.name)
+            return obtenerPersona(2)
+        })
+        .catch(onError)
+
+Y para obtener los valores de esta promesa encadenamos otro .then y copiamos la función parámetro cambiando el valor del id.
+
+    
+        obtenerPersonaje(1)
+            .then( personaje1 => {
+                console.log(personaje1.name)
+                return obtenerPersona(2)                        
+            })
+            .then( personaje2 => {
+                console.log(personaje2.name)
+                return obtenerPersona(3)                                
+            })
+            .then( personaje3 => {
+                console.log(personaje3.name)                                                                    
+                return obtenerPersona(4)                                        
+            })
+            .
+            .
+            .
+            .catch(onError)
+
+// ========================  Codigo completo ================ \\
+
+const API_URL = "https://swapi.dev/api/"
+const PEOPLE_URL = "people/:id" 
+
+const opcs = {crossDomain:true}
+
+function onPeopleReponse(id){
+    return new Promise((resolve, reject) => {
+        const URL = `${API_URL}${PEOPLE_URL.replace(':id',id)}`
+        $.get(URL, opcs,function(data){
+            resolve(data)
+        })
+        .fail(() => reject(id) )
+    })
+}
+
+const onError = function(id){
+    console.log(`ERRORRRRRRRR no se encontro el id ${id}`)
+}
+
+onPeopleReponse(1)
+    .then(function(personaje){
+        console.log(personaje.name)
+        return onPeopleReponse(2)
+    })
+    .then(function(personaje2){
+        console.log(personaje2.name)
+        return onPeopleReponse(3)
+    })
+    .then(function(personaje3){
+        console.log(personaje3.name)
+        return onPeopleReponse(4)
+    })
+    .then(function(personaje4){
+        console.log(personaje4.name)
+        return onPeopleReponse(5)
+    })
+    .catch(onError)
+
+// ============================== Múltiples promesas en paralelo  =============================== \\
+
+*/
+const API_URL = "https://swapi.dev/api/"
+const PEOPLE_URL = "people/:id" 
+
+const opcs = {crossDomain:true}
+
+function onPeopleReponse(id){
+    return new Promise((resolve, reject) => {
+        const URL = `${API_URL}${PEOPLE_URL.replace(':id',id)}`
+        $.get(URL, opcs,function(data){
+            resolve(data)
+        })
+        .fail(() => reject(id) )
+    })
+}
+
+const onError = function(id){
+    console.log(`ERRORRRRRRRR no se encontro el id ${id}`)
+}
+
+const ids = [];
+
+for(let i = 0; i < 10;i++){
+    ids.push(i + 1)
+}
+
+
+var promesas = ids.map(id => onPeopleReponse(id))
+
+Promise.all(promesas)
+    .then( 
+        personajes => console.table(personajes) 
+        /*personajes => {
+            for(var i = 0; i < personajes.length; i++){
+                console.log(personajes[i].name)
+            }
+        }*/
+    )
+    .catch(onError)
+
+
