@@ -6,6 +6,20 @@
 <https://daringfireball.net/projects/markdown/syntax#html>
 
 <https://markdown.es/sintaxis-markdown/>
+<https://docs.github.com/es/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax>
+```ruby
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
+
+```javascript
+function fancyAlert(arg) {
+    if(arg) {
+    $.facebox({div:'#foo'})
+    }
+}
+```
 
 ## Título
 ### Subtítulo
