@@ -190,4 +190,52 @@ console.log(calc.res(40,30))
 Tenemos una clase que tiene un constructor la cual esta asignando dos variables al scope global, despues se tiene un metodo al cual se le va a pasar dos elementos
 En este caso los valores a sumar, luego dentro de este metodo asignamos los valores recibidos a las variables que previamente construi en mi clase.
 
+// Modulos : import y export.
+
+Definimos un archivo nuevo module.js, agregamos:
+
+const hello = () => {
+    return `!Hello`
+}
+
+
+//export default hello para el navegador
+
+// para nodejs
+module.exports = hello
+
+En index.js, agregamos:
+
+//import hello from './module' para el navegador
+// o import {hello} from './module' (probar)
+// para node.
+
+const hello = require('./module')
+
+console.log(hello())
+
+// Generadores \\
+
+Es una funci9j especial que retorna una serie de valores segun el algoritmo definido.
+
+
 */
+
+function* helloWorld(){
+    if(true){
+        yield 'Hello' // yield me permite devolver algor
+                      //y guarda el estado en forma interna
+    }
+
+    if(true){
+        yield 'World'
+    }
+}
+
+const generatorHello = helloWorld()
+console.log(generatorHello.next().value)
+console.log(generatorHello.next().value)
+console.log(generatorHello.next().value)
+
+//La ejecutamos generando una constante igualamos al generador y usamos el valor next que me permitira ejecutar la primera logica y obtener ese valor segun sea el caso y cuando vuelva a ejecutar otra vez next recordara por donde estaba para mostrarme el siguiente valor y asi sucesivamente; el tercer llamado como ya no tenemos un tercer valor devuelve undefined.
+//Un caso de uso es el fibonacci
