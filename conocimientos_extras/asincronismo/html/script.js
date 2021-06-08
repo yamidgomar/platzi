@@ -340,7 +340,6 @@ onPeopleReponse(1)
 
 // ============================== Múltiples promesas en paralelo  =============================== \\
 
-*/
 const API_URL = "https://swapi.dev/api/"
 const PEOPLE_URL = "people/:id" 
 
@@ -372,12 +371,34 @@ var promesas = ids.map(id => onPeopleReponse(id))
 Promise.all(promesas)
     .then( 
         personajes => console.table(personajes) 
-        /*personajes => {
+        personajes => {
             for(var i = 0; i < personajes.length; i++){
                 console.log(personajes[i].name)
             }
-        }*/
+        }
     )
     .catch(onError)
 
+*/
 
+const API_URL = "https://swapi.dev/api/"
+const PEOPLE_URL = "people/:id/"
+const opcs = {crossDomain:true}
+
+function obtenerPersonaje(id, callback){
+    const URL =`${API_URL}${PEOPLE_URL.replace(':id', id)}` 
+    $.get(URL, opcs,callback ).fail(() => console.log(`Errorrrrrrrrrrrrrrrrrrrrrrrrrrrrr`}))
+}
+
+obtenerPersonaje(1, function(data){
+    console.log(data.name)
+    obtenerPersonaje(2, function(data){
+        console.log(data.name)
+            obtenerPersonaje(3, function(data){
+            console.log(data.name)
+                obtenerPersonaje(4, function(data){
+                console.log(data.name)
+            })
+        })
+    })
+})
