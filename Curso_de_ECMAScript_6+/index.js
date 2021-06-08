@@ -159,19 +159,35 @@ helloPromise()
     .then(() => console.log('Hola como estas.'))
     .catch(error => console.log(error))
 
+// ==================== Clases, Módulos y Generadores ============================== \\
+
+class Calculator {
+    constructor(){
+        this.valueA = 0;
+        this.valueB = 0;
+    }
+
+    sum(valueA, valueB){
+        this.valueA = valueA
+        this.valueB = valueB
+        return this.valueA + this.valueB
+    }
+
+    res(valueA, valueB){
+        this.valueA = valueA
+        this.valueB = valueB
+
+        return this.valueA - this.valueB
+    }
+}
+
+const calc = new Calculator()
+
+console.log(calc.sum(2,2))
+console.log(calc.sum(8,2))
+console.log(calc.res(40,30))
+
+Tenemos una clase que tiene un constructor la cual esta asignando dos variables al scope global, despues se tiene un metodo al cual se le va a pasar dos elementos
+En este caso los valores a sumar, luego dentro de este metodo asignamos los valores recibidos a las variables que previamente construi en mi clase.
+
 */
-
-const helloPromise = () => {
-    return new Promise((resolve, reject) => {
-        if(true){
-            resolve('!!Hey')
-        }else{
-            reject('!!Opss')
-        }
-    })
-} 
-
-helloPromise()
-    .then(response => console.log(response))
-    .then(() => console.log('Hola como estas'))
-    .catch(error => console.log(error))
