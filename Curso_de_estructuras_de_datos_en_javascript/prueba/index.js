@@ -20,13 +20,33 @@ class myArray{
         this.length--
         console.log(lastItem)
     }
+
+    delete(index){
+        const item = this.data[index]
+        this.shifIndex(index)
+        console.log(item)
+    }
+
+    shifIndex(index){
+        for(let i = index;i < this.length - 1; i++){
+            this.data[i] = this.data[i + 1]
+        }
+
+        delete this.data[this.length -1]
+        this.length--
+    }
+
+    
 }
 
 const myarray = new myArray()
 
-myarray.get(0)
+//myarray.get(0)
 myarray.push('maria')
 myarray.push('alejandro')
 myarray.push('yago')
-myarray.pop()
+//myarray.pop()
+
+console.log(myarray)
+myarray.delete(1)
 console.log(myarray)
