@@ -239,3 +239,14 @@ console.log(generatorHello.next().value)
 
 //La ejecutamos generando una constante igualamos al generador y usamos el valor next que me permitira ejecutar la primera logica y obtener ese valor segun sea el caso y cuando vuelva a ejecutar otra vez next recordara por donde estaba para mostrarme el siguiente valor y asi sucesivamente; el tercer llamado como ya no tenemos un tercer valor devuelve undefined.
 //Un caso de uso es el fibonacci
+
+
+// ========= Qué se impleménto en ES7 =========== //
+
+//includes trabaja sonre un arreglo o un string me permite validar si hay un elemento.
+
+const numeros = [2, 7, 5, 9, 20, 39]
+
+if(numeros.includes(5)){
+    console.log('Si se encuentra el numero')
+}
