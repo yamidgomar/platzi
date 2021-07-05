@@ -69,4 +69,4 @@ myarray.get(0)
 console.log(myarray.pop())
 console.log(myarray.unshif())
 console.log(myarray)
-
+console.log(miarray.data)
