@@ -219,7 +219,6 @@ console.log(hello())
 Es una funci9j especial que retorna una serie de valores segun el algoritmo definido.
 
 
-*/
 
 function* helloWorld(){
     if(true){
@@ -240,13 +239,220 @@ console.log(generatorHello.next().value)
 //La ejecutamos generando una constante igualamos al generador y usamos el valor next que me permitira ejecutar la primera logica y obtener ese valor segun sea el caso y cuando vuelva a ejecutar otra vez next recordara por donde estaba para mostrarme el siguiente valor y asi sucesivamente; el tercer llamado como ya no tenemos un tercer valor devuelve undefined.
 //Un caso de uso es el fibonacci
 
-
+*/
 // ========= Qué se impleménto en ES7 =========== //
 
 //includes trabaja sonre un arreglo o un string me permite validar si hay un elemento.
-
+/*
 const numeros = [2, 7, 5, 9, 20, 39]
 
-if(numeros.includes(5)){
+if(numeros.includes(20)){
     console.log('Si se encuentra el numero')
+}else{
+    console.log('No se encuentra el numero')
 }
+
+// ==== exponente ======\\
+
+const base = 3
+const exponente = 3
+
+const result = base ** exponente
+console.log(result)
+
+// ========= Que se inplemento en ES8 =============== \\
+
+// =========== Object ========== \\
+
+const data = {
+    frontend:'cristian',
+    backend:'Isabel',
+    desing:'Ana'
+}
+
+const entries = Object.entries(data)
+console.log(entries)
+console.log(entries.length)//al convertir un objeto en una matrix podemos saber el numero de elementos facilmente.
+
+const values = Object.values(data)
+console.log(values)
+console.log(values.length)
+
+const keys = Object.keys(data)
+console.log(keys)
+
+// ======== pagStart ========= \\
+
+const string = 'hello'
+console.log(string.padStart(7, 'hi'))
+
+
+// Async
+//
+
+
+const helloWorld = () => {
+    return new Promise((resolve, reject) => {
+        (true)
+            ? setTimeout( () => resolve('hello'), 3000)
+            :reject(new Error('test error'))
+    })
+}
+
+const value = () => {
+    return new Promise((resolve, reject) => {
+        (true)
+            ? setTimeout(() => resolve('Hiiii'), 3000)
+            : reject('oops')
+    }
+)}
+
+const helloAsync = async () => {
+    const hello = await helloWorld()
+    console.log(hello)
+    const hii = await value() 
+    console.log(hii)
+}
+helloAsync()
+
+
+// *********** Ls forma correcta **********
+
+
+const helloWorld = () => {
+    return new Promise((resolve, reject) => {
+        (true)
+            ? setTimeout( () => resolve('hello'), 3000)
+            //:reject(new Error('test error'))
+            :reject('oops')
+    })
+}
+
+const value = () => {
+    return new Promise((resolve, reject) => {
+        (true)
+            ? setTimeout(() => resolve('Hiiii'), 3000)
+            : reject('oops')
+    }
+)}
+
+const anotherAsync = async () => {
+    try {
+        const hello = await helloWorld()
+        console.log(hello)
+        const hii = await value()
+        console.log(hii)
+    }catch(error){
+        console.log(error)
+    }
+}
+
+anotherAsync()
+
+   
+
+// ************** ES9 ****+*******
+
+const helloWorld = () => {
+    return new Promise((resolve, reject) => {
+        (true)
+            ? setTimeout( () => resolve('hello'), 3000)
+            //:reject(new Error('test error'))
+            :reject('oops')
+    })
+}
+
+
+helloWorld()
+    .then((result) => console.log(result))
+    //.catch(Error())
+    .catch(error => console.log(error)) 
+
+//  ====>
+    
+    .finally(() => console.log('Hemos finalizado'))
+
+// =0=00== =00===== Operador ? =000
+
+
+const obj = {
+    name:'yamid',
+    age:32,
+    country: 'MX'
+}
+
+let {age, ...all} = obj
+console.log(age, all)
+console.log(all)
+
+// uniendo objetos con operador de propagacion(anidar elementos).
+
+let objeto = {
+    ...obj,
+    apellido: 'gonzalez'
+}
+
+console.log(objeto)
+
+///// =======00= cambios en regexp
+
+// agrupar bloques de regex y aceder en cada uno de ellos. Ejm:
+
+const regexdata = /([0-9]{4})-([0-9]{2})-([0-9]{2})/
+const match = regexdata.exec('2021-09-12')
+console.log(match)
+const year = match[1]
+const month = match[2]
+const day = match[3]
+console.log(year, month, day)
+
+*/
+
+// ==============  ES10 =======
+
+//devolver una matriz con cualquier submatriz aplanada ?
+//flat recibe como argumento la profundidad.
+//sin profundidad nos muestra 1 nivel.
+
+const array = [1,2,3, [1,2, [1,2,3]]]
+console.log(array.flat())
+console.log(array.flat(2))
+
+//================= flatMap ==================
+
+//Me permitira mapear cualquier elemento y despues pasarle una funcion y aplanarla depemdiendo el resultado.
+
+const numeros = [1,2,3,4,5]
+console.log(numeros.flatMap(value => [value, value * 2]))
+
+// ================== trimStart, trimEnd ==================
+
+// Eliminar los espacios en blaco de un string
+
+const string = '       Hello word     '
+console.log('|' + string.trim() + '|')
+console.log('|' + string.trimStart() + '|')
+console.log('|' +  string.trimEnd() + '|')
+
+/* manejo o0cional del catch
+
+// antes :
+ try{
+
+ }catch(error){
+    error
+ }
+
+ // ahora:
+ 
+ try{
+
+ }catch{
+    error
+ }
+
+*/
+
+const mysimbol = 'My simbolo'
+const simbol = Symbol(mysimbol)
+console.log(simbol.description)

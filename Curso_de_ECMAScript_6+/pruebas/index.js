@@ -106,7 +106,6 @@ mypromesa()
     .then(() => console.log('Como estas?'))
     .catch(error => console.log(error))
 
-*/
 
 class Calc{ 
     sum(valueA, valueB){
@@ -127,3 +126,47 @@ class Calc{
 var calc = new Calc()
 console.log(calc.sum(4,3))
 console.log(calc.res(20,1))
+
+*/
+
+const data = {
+    frontend:'yago',
+    backend:'Yamid',
+    desing:'alejandro'
+}
+
+const entries = Object.entries(data)
+console.log(entries)
+const keys = Object.keys(data)
+console.log(keys)
+const values = Object.values(data)
+console.log(values)
+
+const saludo = '!Hola'
+console.log(saludo.padStart(21, ' -->'))
+console.log(saludo.padEnd(20, 'hi'))
+
+const numeros = [4, 6 ,9, 10]
+const num = numeros.includes(2)
+
+if(num){
+    console.log('si incluye el numero')
+}else{
+    console.log('no incluye el numero')
+}
+
+const result = [
+    'la matrix',
+    'rapidos y furiosos',
+    'rapidos y furiosos reto tokio',
+    'lo que el viento se llevo',
+    'Iron Man'
+]
+
+result.forEach(pelicula => console.log(pelicula.padStart(40, ' ')))
+
+const Espacios = function(longitud){
+    result.forEach(pelicula => console.log(pelicula.padEnd(40, '    ')))
+} 
+
+//result.forEach(pelicula => console.log(pelicula.padEnd(espacios(cantidad), ' ') + '|'))
