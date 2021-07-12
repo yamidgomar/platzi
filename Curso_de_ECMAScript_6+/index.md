@@ -4,7 +4,7 @@
 
 ###[DEFAULT PARAMEMS Y CONCATENACION.](#sec1)
 
-<a name="sec1">DEFAULT PARAMEMS Y CONCATENACION.</a>
+### <a name="sec1">DEFAULT PARAMEMS Y CONCATENACION.</a>
 
     function newFunction(name, age, country){
         var name = name || 'Yamid'
