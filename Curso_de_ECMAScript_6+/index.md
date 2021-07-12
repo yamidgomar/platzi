@@ -11,26 +11,26 @@
 
 ### ====== ES6 ===== 
 
-function newFunction2(name = 'Yago', age = 30, country = 'Col'){
-    console.log(name, age, country)
-}
+    function newFunction2(name = 'Yago', age = 30, country = 'Col'){
+        console.log(name, age, country)
+    }
 
-newFunction2()
-newFunction2('Yadimid', 25, 'Ven')
+    newFunction2()
+    newFunction2('Yadimid', 25, 'Ven')
 
-let hello = 'Hello'
-let world = 'World'
-let epicPhrase = hello + ' ' + world;
-console.log(epicPhrase)
+    let hello = 'Hello'
+    let world = 'World'
+    let epicPhrase = hello + ' ' + world;
+    console.log(epicPhrase)
 
-// ====== ES6 ===== 
+### ====== ES6 ===== 
 
-let epicPhrase2 = `${hello} ${world}`
-console.log(epicPhrase2)
+    let epicPhrase2 = `${hello} ${world}`
+    console.log(epicPhrase2)
 
-// ====== LET y CONST, Multilínea, Spread Operator y Desestructuración ======== \\
+### ====== LET y CONST, Multilínea, Spread Operator y Desestructuración ======== 
 
-// Multilinea en los strings \\
+Multilinea en los strings
 
 let lorem = 'Consectetur consequuntur eligendi harum commodi \n' +
     'Esta es otra frase epica';
