@@ -1,3 +1,14 @@
+# Curso de EcmaScript6 +.
+
+## Indice
+
+### [DEFAULT PARAMEMS Y CONCATENACION.](#sec1)
+
+<a namef="sec1">DEFAULT PARAMEMS Y CONCATENACION.</a>
+## DEFAULT PARAMEMS Y CONCATENACION.
+
+    function newFunction(name, age, country){
+        var name = name || 'Yamid'</a>
 ## DEFAULT PARAMEMS Y CONCATENACION.
 
     function newFunction(name, age, country){
@@ -9,7 +20,7 @@
 
     newFunction()
 
-### ====== ES6 ===== 
+### ES6
 
     function newFunction2(name = 'Yago', age = 30, country = 'Col'){
         console.log(name, age, country)
@@ -23,12 +34,12 @@
     let epicPhrase = hello + ' ' + world;
     console.log(epicPhrase)
 
-### ====== ES6 ===== 
+### ES6
 
     let epicPhrase2 = `${hello} ${world}`
     console.log(epicPhrase2)
 
-### ====== LET y CONST, Multilínea, Spread Operator y Desestructuración ======== 
+### LET y CONST, Multilínea, Spread Operator y Desestructuración 
 
 **Multilinea en los strings**
 
