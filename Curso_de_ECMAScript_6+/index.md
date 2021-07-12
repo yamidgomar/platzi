@@ -5,11 +5,6 @@
 ###[DEFAULT PARAMEMS Y CONCATENACION.](#sec1)
 
 <a name="sec1">DEFAULT PARAMEMS Y CONCATENACION.</a>
-## DEFAULT PARAMEMS Y CONCATENACION.
-
-    function newFunction(name, age, country){
-        var name = name || 'Yamid'</a>
-## DEFAULT PARAMEMS Y CONCATENACION.
 
     function newFunction(name, age, country){
         var name = name || 'Yamid'
@@ -36,7 +31,8 @@
 
 ### ES6
 
-    let epicPhrase2 = `${hello} ${world}`
+
+let epicPhrase2 = `${hello} ${world}`
     console.log(epicPhrase2)
 
 ### LET y CONST, Multilínea, Spread Operator y Desestructuración 
