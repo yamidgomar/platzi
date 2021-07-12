@@ -3,7 +3,7 @@ const {exec} = require('child_process')
 function ejecutar(funcion){
     exec(funcion, (error, stdout, stderr) => {
         if(stdout){
-            console.log(stdout)
+            console.log(`Actualizando...... `)
         }
     })
 }
