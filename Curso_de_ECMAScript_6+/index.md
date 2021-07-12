@@ -30,7 +30,7 @@
 
 ### ====== LET y CONST, Multilínea, Spread Operator y Desestructuración ======== 
 
-Multilinea en los strings
+**Multilinea en los strings**
 
 let lorem = 'Consectetur consequuntur eligendi harum commodi \n' +
     'Esta es otra frase epica';
