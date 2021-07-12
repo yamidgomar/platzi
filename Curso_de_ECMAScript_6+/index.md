@@ -4,7 +4,7 @@
 
 ###[DEFAULT PARAMEMS Y CONCATENACION.](#sec1)
 
-<a namef="sec1">DEFAULT PARAMEMS Y CONCATENACION.</a>
+<a name="sec1">DEFAULT PARAMEMS Y CONCATENACION.</a>
 ## DEFAULT PARAMEMS Y CONCATENACION.
 
     function newFunction(name, age, country){
