@@ -1,6 +1,4 @@
-/*
-
-//==========   DEFAULT PARAMEMS Y CONCATENACION. ======== \\
+##DEFAULT PARAMEMS Y CONCATENACION.
 
 function newFunction(name, age, country){
     var name = name || 'Yamid'
