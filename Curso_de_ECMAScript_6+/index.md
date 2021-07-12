@@ -36,7 +36,7 @@
 let epicPhrase2 = `${hello} ${world}`
     console.log(epicPhrase2)
 
-<a name="sec2">LET y CONST, Multilínea, Spread Operator y Desestructuración </a>
+###<a name="sec2">LET y CONST, Multilínea, Spread Operator y Desestructuración </a>
 
 **Multilinea en los strings**
 
