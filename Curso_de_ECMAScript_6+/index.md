@@ -7,9 +7,9 @@
         console.log(name, age, country)
     }
 
-newFunction()
+    newFunction()
 
-// ====== ES6 ===== 
+###====== ES6 ===== 
 
 function newFunction2(name = 'Yago', age = 30, country = 'Col'){
     console.log(name, age, country)
