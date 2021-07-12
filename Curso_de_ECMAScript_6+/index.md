@@ -3,6 +3,7 @@
 ## Indice
 
 ###[DEFAULT PARAMEMS Y CONCATENACION.](#sec1)
+###[LET y CONST, Multilínea, Spread Operator y Desestructuración](#sec2)
 
 ### <a name="sec1">DEFAULT PARAMEMS Y CONCATENACION.</a>
 
@@ -35,7 +36,7 @@
 let epicPhrase2 = `${hello} ${world}`
     console.log(epicPhrase2)
 
-### LET y CONST, Multilínea, Spread Operator y Desestructuración 
+<a name="sec2">LET y CONST, Multilínea, Spread Operator y Desestructuración </a>
 
 **Multilinea en los strings**
 
