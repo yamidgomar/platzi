@@ -11,3 +11,4 @@ function ejecutar(funcion){
 
 ejecutar('git add .')
 ejecutar(`git commit -m 'actualizando'`)
+ejecutar(`git push origin master`)
