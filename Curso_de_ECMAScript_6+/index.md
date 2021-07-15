@@ -16,7 +16,7 @@ function newFunction(name, age, country){
 }
 
 newFunction()
-
+```
 ### ES6
 
     function newFunction2(name = 'Yago', age = 30, country = 'Col'){
