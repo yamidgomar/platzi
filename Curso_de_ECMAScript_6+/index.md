@@ -7,14 +7,15 @@
 
 ### <a name="sec1">DEFAULT PARAMEMS Y CONCATENACION.</a>
 
-    function newFunction(name, age, country){
-        var name = name || 'Yamid'
-        var age = age || 34
-        var country = country || 'Mx'
-        console.log(name, age, country)
-    }
+```javascript
+function newFunction(name, age, country){
+    var name = name || 'Yamid'
+    var age = age || 34
+    var country = country || 'Mx'
+    console.log(name, age, country)
+}
 
-    newFunction()
+newFunction()
 
 ### ES6
 
