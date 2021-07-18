@@ -23,7 +23,6 @@ function dateNow(dateNew){
     console.log(dateNew)
 }
 date(dateNow)
-*/
 
 function date(callback){
     console.log(new Date)
@@ -38,3 +37,23 @@ function dateNow(dateNew){
 }
 
 date(dateNow)
+
+*/
+
+var xmlHttpRequest = require('xmlhttprequest').XMLHttpRequest
+let API = 'https://rickandmortyapi.com/api/character'
+function fechData(url_api, callback){
+    let xhttp = new XMLHttpRequest()
+    xhttp.open('GET', url_api, true)
+    xhttp.onreadystatechange = function(event){
+        if(xhttp.readyState === 4){
+            if(xhttp.status === 200){
+                callback(null, JSON.parse(xhttp.responseText))
+            }else{
+                const error = new Error('Error' + url_api)
+                return callback(error, null)
+            }
+        }
+    }
+    xhttp.send()
+}
