@@ -1,10 +1,9 @@
-8# Curso de EcmaScript6 +.
+# Curso de EcmaScript6 +.
 
 ## Indice
 
 ###[DEFAULT PARAMEMS Y CONCATENACION.](#sec1)
 ###[LET y CONST, Multilínea, Spread Operator y Desestructuración](#sec2)
-###[Arrow Functions, Promesas y Parámetros en objetos.](#sec3)
 
 ### <a name="sec1">DEFAULT PARAMEMS Y CONCATENACION.</a>
 
@@ -103,7 +102,7 @@ const a = 'b'
 // a = 'a' no se puede reasignar el valor.
 console.log(a)
 
-###<a name="sec3">Arrow Functions, Promesas y Parámetros en objetos.</a>
+// ==========  Arrow Functions, Promesas y Parámetros en objetos. =================\
 
 // parametros en objetos \\
 
