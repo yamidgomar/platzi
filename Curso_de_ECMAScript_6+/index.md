@@ -27,15 +27,15 @@ function newFunction2(name = 'Yago', age = 30, country = 'Col'){
 newFunction2()
 newFunction2('Yadimid', 25, 'Ven')
 ```
-```javasript
+
 let hello = 'Hello'
 let world = 'World'
 let epicPhrase = hello + ' ' + world;
 console.log(epicPhrase)
-```
-<br>
 
 ### ES6
+
+
 let epicPhrase2 = `${hello} ${world}`
     console.log(epicPhrase2)
 
