@@ -1,9 +1,10 @@
-# Curso de EcmaScript6 +.
+8# Curso de EcmaScript6 +.
 
 ## Indice
 
 ###[DEFAULT PARAMEMS Y CONCATENACION.](#sec1)
 ###[LET y CONST, Multilínea, Spread Operator y Desestructuración](#sec2)
+###[Arrow Functions, Promesas y Parámetros en objetos.](#sec3)
 
 ### <a name="sec1">DEFAULT PARAMEMS Y CONCATENACION.</a>
 
@@ -19,21 +20,23 @@ newFunction()
 ```
 ### ES6
 
-    function newFunction2(name = 'Yago', age = 30, country = 'Col'){
-        console.log(name, age, country)
-    }
+```javascript
+function newFunction2(name = 'Yago', age = 30, country = 'Col'){
+    console.log(name, age, country)
+}
 
-    newFunction2()
-    newFunction2('Yadimid', 25, 'Ven')
-
-    let hello = 'Hello'
-    let world = 'World'
-    let epicPhrase = hello + ' ' + world;
-    console.log(epicPhrase)
+newFunction2()
+newFunction2('Yadimid', 25, 'Ven')
+```
+```javasript
+let hello = 'Hello'
+let world = 'World'
+let epicPhrase = hello + ' ' + world;
+console.log(epicPhrase)
+```
+<br>
 
 ### ES6
-
-
 let epicPhrase2 = `${hello} ${world}`
     console.log(epicPhrase2)
 
@@ -100,7 +103,7 @@ const a = 'b'
 // a = 'a' no se puede reasignar el valor.
 console.log(a)
 
-// ==========  Arrow Functions, Promesas y Parámetros en objetos. =================\
+###<a name="sec3">Arrow Functions, Promesas y Parámetros en objetos.</a>
 
 // parametros en objetos \\
 
