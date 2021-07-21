@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel='stylesheet' href=''>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing:border-box;
+        }
+    </style>
+</head>
+<body>
+    <script src="./eruda/eruda.js"></script>
+    <!--<script>eruda.init();</script>-->
+    <script>
+        /*
+        let el = document.createElement('div');
+        document.body.appendChild(el);
+
+        eruda.init({
+            container: el,
+            tool: ['console', 'elements'] 
+        });
+       */
+        const el = document.createElement('div');
+        document.body.appendChild(el);
+
+        eruda.init({
+                    container: el,
+                    tool: ['console', 'elements'],
+                    useShadowDom: true,
+                    autoScale: true,
+                    defaults: {
+                                displaySize: 50,
+                                transparency: 0.9,
+                                //theme:'Light'
+                                theme:'Dark'
+                               // theme: 'Material Oceanic'
+                            }
+                });
+    </script>
+</body>
+</html>
