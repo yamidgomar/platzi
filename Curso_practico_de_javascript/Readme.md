@@ -24,3 +24,17 @@ necesitamos dos herramientas el radio, hubicados en la mitad del circulo apuntam
 circunferencia = diametro * PI => (3.1415)
 
 area = Radio² * PI  
+
+## Cómo integrar JavaScript en HTML
+
+***Taller #1: figuras geométricas,
+Taller #2: porcentaajes y descuentos,
+ Taller #3: promedio, mediana y moda***
+
+siguen estos pasos: 
+- Primer paso: definir las fórmulas
+- Segundo paso: implementar la fórmulas en JavaScript 
+- Tercer paso: crear funciones
+- Cuarto paso: integrar JS con HTML
+
+
