@@ -19,17 +19,19 @@ newFunction()
 ```
 ### ES6
 
-    function newFunction2(name = 'Yago', age = 30, country = 'Col'){
-        console.log(name, age, country)
-    }
+```javascript
+function newFunction2(name = 'Yago', age = 30, country = 'Col'){
+    console.log(name, age, country)
+}
 
-    newFunction2()
-    newFunction2('Yadimid', 25, 'Ven')
+newFunction2()
+newFunction2('Yadimid', 25, 'Ven')
+```
 
-    let hello = 'Hello'
-    let world = 'World'
-    let epicPhrase = hello + ' ' + world;
-    console.log(epicPhrase)
+let hello = 'Hello'
+let world = 'World'
+let epicPhrase = hello + ' ' + world;
+console.log(epicPhrase)
 
 ### ES6
 
