@@ -33,3 +33,4 @@ somethimewillhapen2()
 
 Promise.all([somethimewillhapen(), somethimewillhapen2()])
     .then(results => console.log('Array de resultados: ' , results))
+
