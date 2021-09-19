@@ -19,8 +19,8 @@ router.get('/message', function(req, res){
     response.success(req, res, 'Lista de mis mensajesss')
 })
 
-router.post('/mesage', function(req, res){
-    res.send('Mensaje añadido');
+router.delete('/message', function(req, res){
+    res.send('Mensaje eliminado corectamente');
 })
 
 router.post('/message', function(req, res){

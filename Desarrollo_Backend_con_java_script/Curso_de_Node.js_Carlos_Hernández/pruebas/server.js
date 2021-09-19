@@ -1,6 +1,7 @@
 var express = require('express')
 const bodyParser = require('body-parser')
 const router = express.Router()
+const response = require('./network/response')
 var app = express()
 
 app.use(bodyParser.json())
@@ -13,7 +14,8 @@ router.get('/message', function(req, res){
         "custon-header":"Nuestro header personalizado",
         "otro-header":"otro header"
     })
-    res.send('Lista de mensajes')
+    //res.send('Lista de mensajes')
+    response.sucess(req, res, '<h1>Lista de respuesta</h1>')
 })
 
 router.delete('/message', function(req, res){
@@ -24,7 +26,9 @@ router.delete('/message', function(req, res){
 
 router.post('/message', function(req, res){
     //res.status(201)
-    res.status(201).send( [{"error":"","body":"creado Correctamente" }])
+    //res.status(201).send( [{"error":"","body":"creado Correctamente" }])
+    response.sucess(req, res, [{"error":"","body":"creado Correctamente" }])
+
 })
 /*app.use('/', function(req, res){
     res.send('hola que tal')

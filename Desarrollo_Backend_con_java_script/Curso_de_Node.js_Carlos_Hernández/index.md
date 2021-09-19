@@ -297,4 +297,31 @@ HTTP/1.1 201 Created
     body:'Creado Correctamente'
 }
 
+## Respuestas coherentes:
 
+./response.js :
+
+exports.success = function (req, res, message){
+    res.send(message)
+}
+
+exports.error = function (req, res){
+
+}
+
+./server.js :
+
+var response = require('./response')
+
+app.get('/message', function(req, res){
+    response.success(req, res, 'Lista de mis mensajesss')
+})
+
+Modificando .response.js 
+
+exports.success = function (req, res, message){
+    res.send({
+        error: "",
+        body: message
+    })
+}
