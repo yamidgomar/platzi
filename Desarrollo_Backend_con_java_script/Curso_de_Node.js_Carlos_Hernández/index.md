@@ -201,6 +201,8 @@ Estructura de una query:
 ## Crear un servidor HTTP desde NodeJS
 
 const express = require('express')
+// import express form 'express'
+
 var app = express();
 
 app.use('/', function(req, res){
@@ -247,8 +249,12 @@ console.log(req.body)
 
 body: del request 
 {
-    "texto":"hola"
+    "text":"hola"
 }
+
+router.post('/message', function(req, res){
+    res.send('Mensaje ' + req.body.text+' añadido.')
+})
 
 - Podemos añadir cualquier content-type ejm urlunlercode:
 - desde server: app.use(bodyParser.urlencoded(extended: false))
@@ -260,7 +266,7 @@ Simplemente en vez de usar req.body usar req.query.
 /message?orderby=id --> {orderby: 'id'} 
  /message?orderby=id&age=15 --> { orderBy: 'id', age: '15'  }
 
-## Cabeceras http</h3>
+## Informacion contextual : Leer las Cabeceras http</h3>
 Las cabeceras (en inglés headers) HTTP permiten al cliente y al servidor enviar información adicional junto a una petición o respuesta.
 
 Una cabecera de petición esta compuesta por su nombre (no sensible a las mayusculas) seguido de dos puntos ‘:’, y a continuación su valor (sin saltos de línea). Los espacios en blanco a la izquierda del valor son ignorados

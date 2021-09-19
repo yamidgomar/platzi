@@ -1,28 +1,34 @@
-const express = require('express')
-const router = express.Router()
+var express = require('express')
 const bodyParser = require('body-parser')
-const response = require('./network/response');
-
+const router = express.Router()
 var app = express()
 
 app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({extended: false}))
+app.use(bodyParser.urlencoded({extended:false}))
 app.use(router)
 
-router.get('/', function(req, res){
+router.get('/message', function(req, res){
     console.log(req.headers)
     res.header({
-        "custom-header":"Nuestro header personbalizado",
-        "Otro_header":"mas header"
+        "custon-header":"Nuestro header personalizado",
+        "otro-header":"otro header"
     })
-    response.sucess(req, res, 'Este es la lista de mensages.')
+    res.send('Lista de mensajes')
 })
 
-router.post('/message', function(req,res){
-    console.log(req.body)
+router.delete('/message', function(req, res){
     console.log(req.query)
-    res.status(201).send({error: '', body: "Creado correctamente"});
+    console.log(req.body)
+    res.send('Mensaje ' + req.body.text +' eliminado.')
 })
 
+router.post('/message', function(req, res){
+    //res.status(201)
+    res.status(201).send( [{"error":"","body":"creado Correctamente" }])
+})
+/*app.use('/', function(req, res){
+    res.send('hola que tal')
+})
+*/
 app.listen(3000)
-console.log('La aplicacion esta escuchando en http://localhost:3000')
+console.log('Conexion en http://localhost:3000/')
